@@ -108,11 +108,9 @@ class SemanticMemory:
         Add a new example to memory.
         """
         if embedding is None:
-            # Compute if not provided
             model = model_manager.get_embedding_model()
             embedding = model.encode(text)
-            
-        # Deduplication check (simple exact text match for now)
+
         for entry in self.data:
             if entry["text"] == text and entry["category"] == category:
                 return

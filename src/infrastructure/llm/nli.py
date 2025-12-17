@@ -13,7 +13,6 @@ from src.utils.logger import logger
 class NLIClassifier:
     """
     NLI-based classifier using ONNX Runtime.
-    Replaces LLM for 'Selection' tasks to save memory and improve accuracy.
     Model: Xenova/nli-deberta-v3-xsmall (or similar quantized)
     """
     def __init__(self):

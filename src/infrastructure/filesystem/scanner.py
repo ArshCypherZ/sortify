@@ -51,7 +51,6 @@ class ContextScanner:
                     
                     # Check depth
                     if current_path.name.lower() in self.ignore_names or current_path.name.startswith("."):
-                         # modifying dirs in-place to prune walk
                          dirs[:] = []
                          continue
                     

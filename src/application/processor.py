@@ -170,8 +170,6 @@ class EventProcessor(threading.Thread):
                         self.ui.notify(Strings.NOTIF_TITLE.value, Strings.NOTIF_MOVED.value.format(file_path.name, category))
                 
                 # Feedback Loop
-                # Only learn if it was a confident classification or user correction (future)
-                # For now, we learn confident moves to reinforce them.
                 if category != "Unknown" and category != "Unsorted":
                     # We need keywords. They are in 'result' from pipeline.
                     keywords = result.get("keywords", [])

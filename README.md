@@ -1,4 +1,12 @@
-# Sortify: Offline Private AI File Organizer
+<div align="center">
+
+<h1>✨ Sortify ✨</h1>
+
+<img src="assets/sortify.png" alt="Sortify" width="320" />
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
+</div>
 
 **Automatically organize your files.**
 
@@ -6,12 +14,12 @@ Sortify is a privacy-focused file organizer that runs in the background. It watc
 
 ## Key Features
 
-*   Reads file contents, not just filenames. It can identify that a PDF containing physics content belongs in your Physics folder.
+*   Reads file contents, not just filenames.
 *   Automatically renames generic files based on their content.
-*   Runs offline using local models. Your data stays on your device.
+*   Runs offline using local models.
 *   Moves uncertain files to a review folder instead of guessing.
 *   Tracks all moves in a database for easy undo.
-*   Efficient and lightweight. Uses file system events instead of constant scanning.
+*   Efficient and lightweight.
 
 ## Getting Started
 
@@ -19,7 +27,9 @@ Sortify is a privacy-focused file organizer that runs in the background. It watc
 - Python 3.10+
 - Linux
 
-### Installation
+<h2 align="center"> 
+   ⇝ Installation ⇜
+</h2>
 
 1.  **Clone the repository:**
     ```bash
@@ -38,21 +48,22 @@ Sortify is a privacy-focused file organizer that runs in the background. It watc
     pip install -r requirements.txt
     ```
 
-## How to Run
+<h2 align="center"> 
+   ⇝ Run Directly ⇜
+</h2>
 
-1.  **Start the Application:**
-    ```bash
-    python3 run.py
-    ```
+```bash
+python3 run.py
+```
 
-2.  **First Run Setup:**
-    - A wizard will appear asking you which folder to watch (usually `~/Downloads`).
-    - It will scan your documents to learn your existing folder structure.
+<h2 align="center"> 
+   ⇝ Setup ⇜
+</h2>
 
-3.  **Sit Back & Relax:**
-    - Download a file.
-    - Watch it disappear from Downloads and reappear in the correct category folder!
-    - Check the System Tray icon to pause or view logs.
+- A wizard will appear asking you which folder to watch (usually `~/Downloads`).
+- It will scan your documents to learn your existing folder structure.
+- Download a file.
+- Watch it disappear from Downloads and reappear in the correct category folder!
 
 ## Configuration
 Sortify creates a hidden folder at `~/.sortify/` to store your settings, logs, and database.
@@ -63,4 +74,5 @@ Sortify creates a hidden folder at `~/.sortify/` to store your settings, logs, a
 - **Memory:** Tested on 105 files simultaneously, ram usage peaks at ~ 1GB.
 
 ---
+
 *Built with ❤️ for a clutter-free digital life.*
