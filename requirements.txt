@@ -1,0 +1,17 @@
+watchfiles
+pydantic
+pydantic-settings
+markitdown[all]
+docling
+Pillow
+onnxruntime
+tokenizers
+sentence-transformers
+keybert
+plyer
+rich
+psutil
+blinker
+sqlmodel
+huggingface-hub
+numpy
